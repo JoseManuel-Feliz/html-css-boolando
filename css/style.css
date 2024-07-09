@@ -40,6 +40,5 @@ body {
 
 .row {
     flex-basis: calc(100% / 3 -20px);
-    flex-wrap: wrap;
     gap: 10px
 }
