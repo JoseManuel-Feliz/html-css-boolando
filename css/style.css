@@ -5,7 +5,8 @@
 }
 
 body {
-    padding-top: 180px;
+    padding: 140px 0;
+
 }
 
 .flex {
@@ -14,9 +15,12 @@ body {
 
 .container {
     width: 1300px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
+.img-fluid {
+    max-width: 100%;
+}
 
 .menu {
     justify-content: space-between;
@@ -31,6 +35,7 @@ body {
     right: 0;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -39,6 +44,69 @@ body {
 }
 
 .row {
-    flex-basis: calc(100% / 3 -20px);
-    gap: 10px
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: calc(100% / 3 - 40px /3);
+}
+
+.card {
+    position: relative;
+}
+
+.discount {
+    background: red;
+    padding: 5px 10px;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+.sustainability {
+    background: green;
+    padding: 5px 10px;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 65px;
+}
+
+.card.right .sustainability {
+    background: green;
+    padding: 5px 10px;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+}
+
+.heart {
+    background-color: #FFFFFF;
+    padding: 5px 20px;
+    font-size: 35px;
+    position: relative;
+    top: 55px;
+    left: 84%;
+}
+
+/*Footer Nav */
+.bg-black {
+    background: black;
+    position: fixed;
+    height: 100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white
+}
+
+.nav-footer {
+    height: 100%;
+
+    justify-content: space-between;
 }
