@@ -46,7 +46,7 @@
 
 /* Utils */
 .container {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0px auto;
 }
 
@@ -66,8 +66,12 @@
     justify-content: space-between;
 }
 
-.align-items-center {
-    align-items: center;
+.text-center {
+    text-align: center;
+}
+
+.align-self {
+    align-self: center;
 }
 
 .wrap-wrap {
@@ -90,7 +94,6 @@
 /* Layot */
 .row {
     flex-direction: row;
-    gap: 20px;
 }
 
 .col {
@@ -99,7 +102,7 @@
 
 /* Sizes */
 .h-10 {
-    height: 10%;
+    min-height: 80px;
 }
 
 .h-100 {
@@ -111,17 +114,26 @@
     margin-top: 5px;
 }
 
+.py-20 {
+    padding: 20px 0;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+
+    gap: 20px;
+}
+
 /* Generics */
 main {
-    margin: 140px 0;
+    padding: 50px 0;
 }
 
 ul {
     list-style-type: none;
-}
-
-li {
-    margin-right: 10px;
 }
 
 a {
@@ -131,8 +143,7 @@ a {
 
 /* heading & footer Navbar */
 .heading-navbar,
-.footer-navbar {
-    position: fixed;
+footer {
     right: 0;
 }
 
@@ -141,7 +152,7 @@ a {
 .hover-img,
 .wrapper,
 .heading-navbar,
-.footer-navbar {
+footer {
     left: 0;
 }
 
@@ -155,7 +166,7 @@ a {
 
 /* Z-index 1 */
 .wrapper,
-.footer-navbar,
+footer,
 .heart-badge {
     z-index: 1;
 }
@@ -165,6 +176,8 @@ a {
 /*** Heading ***/
 /* Nav bar */
 .heading-navbar {
+    position: sticky;
+
     top: 0;
     box-shadow: 0 3px 5px #666666;
     z-index: 2;
@@ -172,7 +185,11 @@ a {
 }
 
 .logo {
-    height: 50px;
+    height: calc(3rem - 1.5vw);
+}
+
+.Toggle-menu {
+    font-size: 2rem;
 }
 
 /*** Main ***/
@@ -208,7 +225,7 @@ a {
 
 /*** Footer  ***/
 /* Footer navbar */
-.footer-navbar {
+footer {
     bottom: 0;
 
 }

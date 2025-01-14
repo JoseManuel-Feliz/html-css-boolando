@@ -9,188 +9,191 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- STYLESHEET CSS -->
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- CUSTOM RESPONSIVE CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- SCRIPT JS -->
     <script defer src="./JS/script.js"></script>
 </head>
 
 <body>
     <!-- Heading -->
-    <header class="heading-navbar bg-orange h-10">
+    <header class="heading-navbar bg-orange h-80 py-20">
 
-        <nav class="fw-bold  container d-flex justify-content-between 
-            align-items-center h-100">
+        <nav class="navbar-menu fw-bold container d-flex justify-content-between 
+            align-items-center h-100 wrap-wrap">
             <!-- Genders Categories -->
-            <div class="gender-categories">
-                <ul class="d-flex">
-                    <li><a class="c-primary" href="#">Donna</a></li>
-                    <li><a class="c-primary" href="#">Uomo</a></li>
-                    <li><a class="c-primary" href="#">Bambini</a></li>
-                </ul>
-            </div>
+
+            <ul class="gender-categories d-flex gap-15">
+                <li><a class="c-primary" href="#">Donna</a></li>
+                <li><a class="c-primary" href="#">Uomo</a></li>
+                <li><a class="c-primary" href="#">Bambini</a></li>
+            </ul>
 
             <!-- Home Logo -->
-            <a class="c-primary" href="#">
-                <img class="logo" src="img/boolean-logo.png" alt="Booleando logo"></a>
+            <div class="logo-wrapper">
+
+                <a class="c-primary text-center" href="#">
+                    <img class="logo" src="img/boolean-logo.png" alt="Booleando logo"></a>
+            </div>
 
             <!-- Favourites  Cart Profile-->
-            <div class="user-area">
-                <ul class="d-flex">
-                    <li><a class="c-primary" href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a class="c-primary" href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                    <li><a class="c-primary" href="#"><i class="fa-regular fa-user"></i></a></li>
-                </ul>
-            </div>
+            <ul class="user-area d-flex gap-15">
+                <li><a class="c-primary" href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a class="c-primary" href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a class="c-primary" href="#"><i class="fa-regular fa-user"></i></a></li>
+            </ul>
+
+            <i class="fa-solid fa-bars Toggle-menu d-flex c-primary"></i>
         </nav>
 
 
     </header>
     <!-- Main Text -->
-    <main>
-        <div class="container">
+    <main class="container">
 
-            <div class="row d-flex wrap-wrap">
+        <div class="row gap-20 d-flex wrap-wrap">
 
-                <!-- Levi's Relaxed shirt -->
-                <div class="col ">
-                    <div class="card">
-                        <div class="wrapper badge">
-                            <span class="discount c-primary bg-red">-50%</span>
-                            <span class="sustainability bg-green c-primary">Sostenibilità</span>
-                        </div>
+            <!-- Levi's Relaxed shirt -->
+            <div class="col ">
+                <div class="card">
+                    <div class="wrapper badge">
+                        <span class="discount c-primary bg-red">-50%</span>
+                        <span class="sustainability bg-green c-primary">Sostenibilità</span>
+                    </div>
 
-                        <!-- Badge -->
-                        <span class="heart-badge bg-primary"><span class="favourites"></span></span>
-                        <img class="img-fluid" src="img/1.webp" alt="Levi's Relaxed shirt">
-                        <img class="img-fluid hover-img" src="img/1b.webp" alt="Levi's Relaxed shirt">
+                    <!-- Badge -->
+                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <img class="img-fluid" src="img/1.webp" alt="Levi's Relaxed shirt">
+                    <img class="img-fluid hover-img" src="img/1b.webp" alt="Levi's Relaxed shirt">
 
-                        <!-- Description -->
-                        <div class="info">
-                            <span>Levis's</span>
-                            <h4>RELAXED FIT TEE UNISEX</h4>
-                            <span class="c-red"><strong>14.99€</strong></span>
-                            <span class="text-line-th">29.99€</span>
-                        </div>
+                    <!-- Description -->
+                    <div class="info">
+                        <span>Levis's</span>
+                        <h4>RELAXED FIT TEE UNISEX</h4>
+                        <span class="c-red"><strong>14.99€</strong></span>
+                        <span class="text-line-th">29.99€</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Guess shirt -->
-                <div class="col">
-                    <div class="card">
-                        <div class="wrapper badge">
-                            <span class="discount c-primary bg-red">-30%</span>
-                            <span class="sustainability bg-green c-primary d-none">Sostenibilità</span>
-                        </div>
+            <!-- Guess shirt -->
+            <div class="col">
+                <div class="card">
+                    <div class="wrapper badge">
+                        <span class="discount c-primary bg-red">-30%</span>
+                        <span class="sustainability bg-green c-primary d-none">Sostenibilità</span>
+                    </div>
 
-                        <!-- Badge -->
-                        <span class="heart-badge bg-primary"><span class="favourites"></span></span>
-                        <img class="img-fluid" src="img/2.webp" alt="Guess shirt">
-                        <img class="img-fluid hover-img" src="img/2b.webp" alt="Guess shirt">
+                    <!-- Badge -->
+                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <img class="img-fluid" src="img/2.webp" alt="Guess shirt">
+                    <img class="img-fluid hover-img" src="img/2b.webp" alt="Guess shirt">
 
-                        <!-- Description -->
-                        <div class="info">
-                            <span>Guess</span>
-                            <h4>ROSSES TEE</h4>
-                            <span class="c-red"><strong>20.99€</strong></span>
-                            <span class="text-line-th">29.99€</span>
-                        </div>
+                    <!-- Description -->
+                    <div class="info">
+                        <span>Guess</span>
+                        <h4>ROSSES TEE</h4>
+                        <span class="c-red"><strong>20.99€</strong></span>
+                        <span class="text-line-th">29.99€</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Green dress -->
-                <div class="col">
-                    <div class="card">
-                        <div class="wrapper badge">
-                            <span class="discount c-primary bg-red">-30%</span>
-                            <span class="sustainability bg-green c-primary d-none">Sostenibilità</span>
-                        </div>
+            <!-- Green dress -->
+            <div class="col">
+                <div class="card">
+                    <div class="wrapper badge">
+                        <span class="discount c-primary bg-red">-30%</span>
+                        <span class="sustainability bg-green c-primary d-none">Sostenibilità</span>
+                    </div>
 
-                        <!-- Badge -->
-                        <span class="heart-badge bg-primary"><span class="favourites"></span></span>
-                        <img class="img-fluid" src="img/3.webp" alt="Green dress">
-                        <img class="img-fluid hover-img" src="img/3b.webp" alt="Green dress">
+                    <!-- Badge -->
+                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <img class="img-fluid" src="img/3.webp" alt="Green dress">
+                    <img class="img-fluid hover-img" src="img/3b.webp" alt="Green dress">
 
-                        <!-- Description -->
-                        <div class="info">
-                            <span>Come Zucchero Filato</span>
-                            <h4>VOGLIA DI COLORI PASTELLO</h4>
-                            <span class="c-red"><strong>129,99€</strong></span>
-                            <span class="text-line-th">184,99€</span>
-                        </div>
+                    <!-- Description -->
+                    <div class="info">
+                        <span>Come Zucchero Filato</span>
+                        <h4>VOGLIA DI COLORI PASTELLO</h4>
+                        <span class="c-red"><strong>129,99€</strong></span>
+                        <span class="text-line-th">184,99€</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Levi's Unisex shirt -->
-                <div class="col">
-                    <div class="card">
-                        <div class="wrapper badge">
-                            <span class="discount c-primary bg-red">-50%</span>
-                            <span class="sustainability bg-green c-primary">Sostenibilità</span>
-                        </div>
+            <!-- Levi's Unisex shirt -->
+            <div class="col">
+                <div class="card">
+                    <div class="wrapper badge">
+                        <span class="discount c-primary bg-red">-50%</span>
+                        <span class="sustainability bg-green c-primary">Sostenibilità</span>
+                    </div>
 
-                        <!-- Badge -->
-                        <span class="heart-badge bg-primary"><span class="favourites"></span></span>
-                        <img class="img-fluid" src="img/4.webp" alt="Levi's Unisex shirt">
-                        <img class="img-fluid hover-img" src="img/4b.webp" alt="Levi's Unisex shirt">
+                    <!-- Badge -->
+                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <img class="img-fluid" src="img/4.webp" alt="Levi's Unisex shirt">
+                    <img class="img-fluid hover-img" src="img/4b.webp" alt="Levi's Unisex shirt">
 
-                        <!-- Description -->
-                        <div class="info">
-                            <span>Levi's</span>
-                            <h4>TEE UNISEX</h4>
-                            <span class="c-red"><strong>14.99€</strong></span>
-                            <span class="text-line-th">29.99€</span>
-                        </div>
+                    <!-- Description -->
+                    <div class="info">
+                        <span>Levi's</span>
+                        <h4>TEE UNISEX</h4>
+                        <span class="c-red"><strong>14.99€</strong></span>
+                        <span class="text-line-th">29.99€</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Stripe Bodice dress -->
-                <div class="col">
-                    <div class="card">
-                        <div class="wrapper badge">
-                            <span class="discount c-primary bg-red d-none"></span>
-                            <span class="sustainability bg-green c-primary d-none">Sostenibilità</span>
-                        </div>
+            <!-- Stripe Bodice dress -->
+            <div class="col">
+                <div class="card">
+                    <div class="wrapper badge">
+                        <span class="discount c-primary bg-red d-none"></span>
+                        <span class="sustainability bg-green c-primary d-none">Sostenibilità</span>
+                    </div>
 
-                        <!-- Badge -->
-                        <span class="heart-badge bg-primary"><span class="favourites"></span></span>
-                        <img class="img-fluid" src="img/5b.webp" alt="Stripe Bodice dress">
-                        <img class="img-fluid hover-img" src="img/5.webp" alt="Stripe Bodice dress">
+                    <!-- Badge -->
+                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <img class="img-fluid" src="img/5b.webp" alt="Stripe Bodice dress">
+                    <img class="img-fluid hover-img" src="img/5.webp" alt="Stripe Bodice dress">
 
-                        <!-- Description -->
-                        <div class="info">
-                            <span>Maya Deluxe</span>
-                            <h4>STRIPE BODICE</h4>
-                            <span class="c-red"><strong>99.99€</strong></span>
-                        </div>
+                    <!-- Description -->
+                    <div class="info">
+                        <span>Maya Deluxe</span>
+                        <h4>STRIPE BODICE</h4>
+                        <span class="c-red"><strong>99.99€</strong></span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Espirit shirt -->
-                <div class="col">
-                    <div class="card">
-                        <div class="wrapper badge">
-                            <span class="discount c-primary bg-red d-none"></span>
-                            <span class="sustainability bg-green c-primary">Sostenibilità</span>
-                        </div>
+            <!-- Espirit shirt -->
+            <div class="col">
+                <div class="card">
+                    <div class="wrapper badge">
+                        <span class="discount c-primary bg-red d-none"></span>
+                        <span class="sustainability bg-green c-primary">Sostenibilità</span>
+                    </div>
 
-                        <!-- Badge -->
-                        <span class="heart-badge bg-primary"><span class="favourites"></span></span>
-                        <img class="img-fluid" src="img/6.webp" alt="Espirit shirt">
-                        <img class="img-fluid hover-img" src="img/6b.webp" alt="Espirit shirt">
+                    <!-- Badge -->
+                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <img class="img-fluid" src="img/6.webp" alt="Espirit shirt">
+                    <img class="img-fluid hover-img" src="img/6b.webp" alt="Espirit shirt">
 
-                        <!-- Description -->
-                        <div class="info">
-                            <span>Espirit</span>
-                            <h4>MAGLIONE-BlACK</h4>
-                            <span class="c-red"><strong>29.99€</strong></span>
-                        </div>
+                    <!-- Description -->
+                    <div class="info">
+                        <span>Espirit</span>
+                        <h4>MAGLIONE-BlACK</h4>
+                        <span class="c-red"><strong>29.99€</strong></span>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </main>
-    <footer class="footer-navbar c-primary h-10 bg-black">
+    <footer class="c-primary h-80 py-20 bg-black">
 
         <!-- Footer navbar -->
         <nav class="container d-flex h-100 justify-content-between align-items-center">
@@ -198,7 +201,7 @@
             <!-- About-us -->
             <div class="terms-conditions privacy">
                 <span><strong>Booleando</strong></span>
-                <ul class="d-flex mt-5">
+                <ul class="d-flex mt-5 gap-15">
                     <li><a class="c-primary" href="#"><span>Informazioni legali</span></a></li>
                     <li><a class="c-primary" href="#"><span>Informativa sulla privacy</span></a></li>
                     <li><a class="c-primary" href="#"><span>Diritto di recesso</span></a></li>
@@ -208,7 +211,7 @@
             <!-- Socials -->
             <div class="find-us socials">
                 <span><strong>Trovaci anche su</strong></span>
-                <ul class="d-flex mt-5">
+                <ul class="d-flex mt-5 gap-15">
                     <li><a class="c-primary" href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
                     <li><a class="c-primary" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
                     <li><a class="c-primary" href="#"><i class="fa-brands fa-instagram"></i></a></li>

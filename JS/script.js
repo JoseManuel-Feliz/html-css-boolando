@@ -1,4 +1,4 @@
-console.log('ok')
+console.log('ok', visualViewport)
 
 /* Toogle fuction for favourites class  */
 
