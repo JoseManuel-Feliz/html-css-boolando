@@ -69,6 +69,7 @@ const toggleBtn = document.querySelector('.toggle-menu');
 const userMenu = document.querySelector('.user-menu');
 const categories = document.querySelector('.gender-categories');
 const nav = document.querySelector('.heading-navbar');
+const navbarMenu = document.querySelector('.navbar-menu');
 const logo = document.querySelector('.logo-wrapper');
 
 function getViewSize() {
@@ -78,10 +79,22 @@ function getViewSize() {
 function mobileResponsive() {
     if (getViewSize() <= 768) {
         toggleBtn.dataset.display = 'show';
+        navbarMenu.classList.add('col-10');
+        navbarMenu.classList.remove('col-12');
     } else {
         toggleBtn.dataset.display = 'hide';
         userMenu.classList.remove('expanded');
         categories.classList.remove('expanded');
+        logo.classList.remove('expanded');
+        navbarMenu.classList.add('col-12');
+        navbarMenu.classList.remove('col-10');
+
+        toggleBtn.classList.add('fa-bars');
+        toggleBtn.classList.remove('fa-xmark');
+
+        if (nav.dataset.expanded !== undefined) {
+            delete nav.dataset.expanded;
+        }
     }
 }
 

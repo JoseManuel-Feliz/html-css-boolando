@@ -4,12 +4,21 @@
         margin: 0 5%;
     }
 
+    .logo-wrapper {
+        text-align: center;
+    }
 }
 
 /* Large BreakPoint */
 @media (width<=1160px) {
-    .logo {
-        height: calc(3rem - 1.5vw);
+
+    main,
+    footer {
+        font-size: calc(1.3rem - 0.6vh);
+    }
+
+    .heading-navbar {
+        font-size: calc(1.5rem - 0.4vh);
     }
 
     .favourites::before {
@@ -25,42 +34,46 @@
 @media (width <=768px) {
 
     .navbar-menu>* {
-        flex-basis: calc(100% / 2 - 2.5rem / 2);
+        flex: 0 1 100%;
     }
 
     .logo-wrapper {
         flex-grow: 1;
-        height: calc(4rem - 2.5vw);
+        text-align: left;
     }
 
     .gender-categories,
-    .user-area {
+    .user-menu {
         flex-shrink: 2;
         order: 1;
-        margin: 20px 0;
+        margin: 15px 0;
+        display: none;
     }
 
-    .Toggle-menu {
-        flex-shrink: 1;
+    .toggle-menu {
         justify-content: flex-end;
     }
 
-    .user-area {
-        text-align: right;
+    .user-menu {
+        justify-content: flex-start;
     }
 
     .col {
-
         flex-basis: calc(100% / 2 - 20px /2);
+    }
+
+    footer.h-80 {
+        height: auto;
+    }
+
+    .col-footer {
+        flex: 0 1 100%
     }
 }
 
 
 /* Small Breakpoint */
 @media (width <=550px) {
-    .navbar-menu>* {
-        flex-basis: auto;
-    }
 
     .col {
         flex-basis: 100%;
@@ -74,6 +87,23 @@
         padding: 0px 25px;
     }
 
+    footer nav {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer nav.h-100 {
+        justify-content: center;
+    }
+
+    .terms-conditions {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
     /* .row {
         flex-wrap: wrap;
     }
@@ -86,4 +116,24 @@
     .why-us {
         background-color: #222222;
     } */
+}
+
+@media (width<=350px) {
+    * {
+        font-size: calc(1.2rem - 0.5vh);
+    }
+
+    .logo {
+        height: calc(2.2rem - 0.8vh);
+    }
+
+    .gender-categories {
+        flex-direction: column;
+    }
+
+    .fa-xmark.toggle-menu {
+        margin-top: 0;
+        font-size: calc(1.8rem - 0.6vh);
+    }
+
 }

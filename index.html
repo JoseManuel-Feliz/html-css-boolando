@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booleando</title>
     <!-- FONT-AWESOME ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b4855ea7eb.js" crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- CUSTOM RESPONSIVE CSS -->
@@ -19,37 +17,38 @@
 
 <body>
     <!-- Heading -->
-    <header class="heading-navbar bg-orange h-80 py-20">
 
-        <nav class="navbar-menu fw-bold container d-flex justify-content-between 
+    <nav class="heading-navbar bg-orange h-80 right-0 left-0">
+        <div class="container row">
+
+            <header class="navbar-menu fw-bold d-flex 
             align-items-center h-100 wrap-wrap">
-            <!-- Genders Categories -->
+                <!-- Genders Categories -->
 
-            <ul class="gender-categories d-flex gap-15">
-                <li><a class="c-primary" href="#">Donna</a></li>
-                <li><a class="c-primary" href="#">Uomo</a></li>
-                <li><a class="c-primary" href="#">Bambini</a></li>
-            </ul>
+                <ul class="gender-categories d-flex gap-15 nav-item">
+                    <li><a class="c-primary" href="#">Donna</a></li>
+                    <li><a class="c-primary" href="#">Uomo</a></li>
+                    <li><a class="c-primary" href="#">Bambini</a></li>
+                </ul>
 
-            <!-- Home Logo -->
-            <div class="logo-wrapper">
+                <!-- Home Logo -->
 
-                <a class="c-primary text-center" href="#">
-                    <img class="logo" src="img/boolean-logo.png" alt="Booleando logo"></a>
-            </div>
+                <a class="c-primary logo-wrapper nav-item text-center" href="#">
+                    <img class="logo v-align-middle " src="img/boolean-logo.png" alt="Booleando logo"></a>
 
-            <!-- Favourites  Cart Profile-->
-            <ul class="user-area d-flex gap-15">
-                <li><a class="c-primary" href="#"><i class="fa-regular fa-heart"></i></a></li>
-                <li><a class="c-primary" href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <li><a class="c-primary" href="#"><i class="fa-regular fa-user"></i></a></li>
-            </ul>
+                <!-- Favourites  Cart Profile-->
+                <ul class="user-menu d-flex gap-15 nav-item justify-content-end">
+                    <li><a class="c-primary" href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a class="c-primary" href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a class="c-primary" href="#"><i class="fa-regular fa-user"></i></a></li>
+                </ul>
+            </header>
 
-            <i class="fa-solid fa-bars Toggle-menu d-flex c-primary"></i>
-        </nav>
+            <i
+                class="fa-solid fa-bars toggle-menu d-flex align-items-center c-primary col-2 h-100 justify-content-end"></i>
+        </div>
+    </nav>
 
-
-    </header>
     <!-- Main Text -->
     <main class="container">
 
@@ -58,15 +57,15 @@
             <!-- Levi's Relaxed shirt -->
             <div class="col ">
                 <div class="card">
-                    <div class="wrapper badge">
+                    <div class="wrapper p-absolute left-0 z-1 badge">
                         <span class="discount c-primary bg-red">-50%</span>
                         <span class="sustainability bg-green c-primary">Sostenibilità</span>
                     </div>
 
                     <!-- Badge -->
-                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <span class="heart-badge p-absolute z-1 bg-primary"><span class="favourites"></span></span>
                     <img class="img-fluid" src="img/1.webp" alt="Levi's Relaxed shirt">
-                    <img class="img-fluid hover-img" src="img/1b.webp" alt="Levi's Relaxed shirt">
+                    <img class="img-fluid hover-img p-absolute left-0" src="img/1b.webp" alt="Levi's Relaxed shirt">
 
                     <!-- Description -->
                     <div class="info">
@@ -81,15 +80,15 @@
             <!-- Guess shirt -->
             <div class="col">
                 <div class="card">
-                    <div class="wrapper badge">
+                    <div class="wrapper p-absolute left-0 z-1 badge">
                         <span class="discount c-primary bg-red">-30%</span>
                         <span class="sustainability bg-green c-primary d-none">Sostenibilità</span>
                     </div>
 
                     <!-- Badge -->
-                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <span class="heart-badge p-absolute z-1 bg-primary"><span class="favourites"></span></span>
                     <img class="img-fluid" src="img/2.webp" alt="Guess shirt">
-                    <img class="img-fluid hover-img" src="img/2b.webp" alt="Guess shirt">
+                    <img class="img-fluid hover-img p-absolute left-0" src="img/2b.webp" alt="Guess shirt">
 
                     <!-- Description -->
                     <div class="info">
@@ -104,15 +103,15 @@
             <!-- Green dress -->
             <div class="col">
                 <div class="card">
-                    <div class="wrapper badge">
+                    <div class="wrapper p-absolute left-0 z-1 badge">
                         <span class="discount c-primary bg-red">-30%</span>
                         <span class="sustainability bg-green c-primary d-none">Sostenibilità</span>
                     </div>
 
                     <!-- Badge -->
-                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <span class="heart-badge p-absolute z-1 bg-primary"><span class="favourites"></span></span>
                     <img class="img-fluid" src="img/3.webp" alt="Green dress">
-                    <img class="img-fluid hover-img" src="img/3b.webp" alt="Green dress">
+                    <img class="img-fluid hover-img p-absolute left-0" src="img/3b.webp" alt="Green dress">
 
                     <!-- Description -->
                     <div class="info">
@@ -127,15 +126,15 @@
             <!-- Levi's Unisex shirt -->
             <div class="col">
                 <div class="card">
-                    <div class="wrapper badge">
+                    <div class="wrapper p-absolute left-0 z-1 badge">
                         <span class="discount c-primary bg-red">-50%</span>
                         <span class="sustainability bg-green c-primary">Sostenibilità</span>
                     </div>
 
                     <!-- Badge -->
-                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <span class="heart-badge p-absolute z-1 bg-primary"><span class="favourites"></span></span>
                     <img class="img-fluid" src="img/4.webp" alt="Levi's Unisex shirt">
-                    <img class="img-fluid hover-img" src="img/4b.webp" alt="Levi's Unisex shirt">
+                    <img class="img-fluid hover-img p-absolute left-0" src="img/4b.webp" alt="Levi's Unisex shirt">
 
                     <!-- Description -->
                     <div class="info">
@@ -150,15 +149,15 @@
             <!-- Stripe Bodice dress -->
             <div class="col">
                 <div class="card">
-                    <div class="wrapper badge">
+                    <div class="wrapper p-absolute left-0 z-1 badge">
                         <span class="discount c-primary bg-red d-none"></span>
                         <span class="sustainability bg-green c-primary d-none">Sostenibilità</span>
                     </div>
 
                     <!-- Badge -->
-                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <span class="heart-badge p-absolute z-1 bg-primary"><span class="favourites"></span></span>
                     <img class="img-fluid" src="img/5b.webp" alt="Stripe Bodice dress">
-                    <img class="img-fluid hover-img" src="img/5.webp" alt="Stripe Bodice dress">
+                    <img class="img-fluid hover-img p-absolute left-0" src="img/5.webp" alt="Stripe Bodice dress">
 
                     <!-- Description -->
                     <div class="info">
@@ -172,15 +171,15 @@
             <!-- Espirit shirt -->
             <div class="col">
                 <div class="card">
-                    <div class="wrapper badge">
+                    <div class="wrapper p-absolute left-0 z-1 badge">
                         <span class="discount c-primary bg-red d-none"></span>
                         <span class="sustainability bg-green c-primary">Sostenibilità</span>
                     </div>
 
                     <!-- Badge -->
-                    <span class="heart-badge bg-primary"><span class="favourites"></span></span>
+                    <span class="heart-badge p-absolute z-1 bg-primary"><span class="favourites"></span></span>
                     <img class="img-fluid" src="img/6.webp" alt="Espirit shirt">
-                    <img class="img-fluid hover-img" src="img/6b.webp" alt="Espirit shirt">
+                    <img class="img-fluid hover-img p-absolute left-0" src="img/6b.webp" alt="Espirit shirt">
 
                     <!-- Description -->
                     <div class="info">
@@ -193,18 +192,18 @@
         </div>
         </div>
     </main>
-    <footer class="c-primary h-80 py-20 bg-black">
+    <footer class="c-primary h-80 py-20 bg-black bottom-0 right-0 left-0 z-1">
 
         <!-- Footer navbar -->
         <nav class="container d-flex h-100 justify-content-between align-items-center">
 
             <!-- About-us -->
             <div class="terms-conditions privacy">
-                <span><strong>Booleando</strong></span>
-                <ul class="d-flex mt-5 gap-15">
-                    <li><a class="c-primary" href="#"><span>Informazioni legali</span></a></li>
-                    <li><a class="c-primary" href="#"><span>Informativa sulla privacy</span></a></li>
-                    <li><a class="c-primary" href="#"><span>Diritto di recesso</span></a></li>
+                <div class="logo-title">Booleando</div>
+                <ul class="d-flex mt-5 gap-15 wrap-wrap">
+                    <li class="col-footer"><a class="c-primary" href="#"><span>Informazioni legali</span></a></li>
+                    <li class="col-footer"><a class="c-primary" href="#"><span>Informativa sulla privacy</span></a></li>
+                    <li class="col-footer"><a class="c-primary" href="#"><span>Diritto di recesso</span></a></li>
                 </ul>
 
             </div>
