@@ -1,4 +1,4 @@
-console.log('ok', visualViewport)
+console.log('ok', visualViewport);
 
 /**
  * Adds the specified class to the provided elements when the given event occurs.
@@ -64,3 +64,49 @@ const hearts = document.querySelectorAll('.favourites');
 removeClassOnEvent(hearts, 'c-red', 'mouseout');
 addClassOnEvent(hearts, 'c-red', 'mouseover');
 toggleDatasetOnEvent(hearts, 'favourite', 'click');
+
+const toggleBtn = document.querySelector('.toggle-menu');
+const userMenu = document.querySelector('.user-menu');
+const categories = document.querySelector('.gender-categories');
+const nav = document.querySelector('.heading-navbar');
+const logo = document.querySelector('.logo-wrapper');
+
+function getViewSize() {
+    return document.documentElement.clientWidth;
+}
+
+function mobileResponsive() {
+    if (getViewSize() <= 768) {
+        toggleBtn.dataset.display = 'show';
+    } else {
+        toggleBtn.dataset.display = 'hide';
+        userMenu.classList.remove('expanded');
+        categories.classList.remove('expanded');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', mobileResponsive);
+
+
+toggleBtn.addEventListener('click', () => {
+    if (getViewSize() <= 768) {
+        toggleBtn.classList.toggle('fa-bars');
+        toggleBtn.classList.toggle('fa-xmark');
+
+        userMenu.classList.toggle('expanded');
+        categories.classList.toggle('expanded');
+        logo.classList.toggle('expanded');
+
+        if (nav.dataset.expanded !== undefined) {
+            delete nav.dataset.expanded;
+        } else {
+            nav.dataset.expanded = 'true';
+        }
+    }
+});
+
+
+window.addEventListener('resize', () => {
+    mobileResponsive();
+    console.log(getViewSize());
+});
