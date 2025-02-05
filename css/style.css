@@ -223,6 +223,10 @@ footer,
     border-top-right-radius: 20px
 }
 
+.favourites[data-favourite="true"] {
+    color: var(--red);
+}
+
 /*** Footer  ***/
 /* Footer navbar */
 footer {
